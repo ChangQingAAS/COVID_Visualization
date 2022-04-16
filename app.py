@@ -91,4 +91,5 @@ def get_time():
 
 
 if __name__ == "__main__":
-    app.run(host=HOST, port=PORT + int(random.random() * 1000))
+    app.run(host=HOST, port=PORT +
+            int(random.random() * random.random() * 10000))
