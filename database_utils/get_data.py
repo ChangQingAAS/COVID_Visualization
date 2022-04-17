@@ -1,12 +1,4 @@
-import time
-from DB_Connector import query
-
-
-# 转成中文格式
-def get_time():
-    time_str = time.strftime("%Y{}%m{}%d{} %X")
-    return time_str.format("年", '月', '日')
-
+from .connector import query
 
 def get_c1_data() -> tuple:
     """
@@ -105,7 +97,3 @@ def get_r2_data():
     sql = 'select content from hotsearch order by id desc limit 30'
     res = query(sql)  # 格式 (('民警抗疫一线奋战16天牺牲 1037364',), ('四川再派两批医疗队 1537382',)
     return res
-
-
-# if __name__ == "__main__":
-# 	print(get_r2_data())

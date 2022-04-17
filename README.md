@@ -50,3 +50,18 @@
 ### 注意事项
 
 - 项目中chromedriver适用于Google Chrome102版本，其他版本请前往 [此处](https://chromedriver.storage.googleapis.com/index.html) 下载并复制到项目所在目录。
+
+
+## 各大平台疫情数据的网站
+### 百度
+https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_pc_1    
+### 爬取百度的疫情数据平台的今日疫情热搜
+https://voice.baidu.com/act/virussearch/virussearch?from=osari_map&tab=0&infomore=1 
+
+### 腾讯
+https://news.qq.com//zt2022/page/feiyan.htm   
+
+### 爬取腾讯yq数据
+https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5
+
+https://view.inews.qq.com/g2/getOnsInfo?name=disease_other

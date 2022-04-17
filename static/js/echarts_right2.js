@@ -1,8 +1,8 @@
-var ec_right2 = echarts.init(document.getElementById('r2'), "dark");
+var echarts_right2 = echarts.init(document.getElementById('r2'), "dark");
 
 // var ddd = [{'name': '肺炎', 'value': '12734670'}, {'name': '实时', 'value': '12734670'},
 //     {'name': '新型', 'value': '12734670'}]
-var ec_right2_option = {
+var echarts_right2_option = {
     // backgroundColor: '#515151',
     title: {
         text: "百度热搜",
@@ -44,4 +44,4 @@ var ec_right2_option = {
     }]
 }
 
-ec_right2.setOption(ec_right2_option);
+echarts_right2.setOption(echarts_right2_option);

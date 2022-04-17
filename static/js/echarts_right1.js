@@ -1,5 +1,5 @@
-var ec_right1 = echarts.init(document.getElementById('r1'), 'dark');
-var ec_right1_option = {
+var echarts_right1 = echarts.init(document.getElementById('r1'), 'dark');
+var echarts_right1_option = {
 	//标题样式
 	title: {
 		text: "城市确诊TOP5",
@@ -30,4 +30,4 @@ var ec_right1_option = {
 		barMaxWidth: "50%"
 	}]
 };
-ec_right1.setOption(ec_right1_option)
+echarts_right1.setOption(echarts_right1_option)

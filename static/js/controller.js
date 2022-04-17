@@ -41,25 +41,25 @@ function get_c2_data() {
     $.ajax({
         url: "/c2",
         success: function (data) {
-            ec_center_option.series[0].data = data.data
-            ec_center.setOption(ec_center_option)
+            echarts_center_option.series[0].data = data.data
+            echarts_center.setOption(echarts_center_option)
         },
         error: console.error('请求c2数据失败')
     });
 }
 
 function get_l1_data() {
-    ec_left1.showLoading()
+    echarts_left1.showLoading()
     $.ajax({
         url: "/l1",
         success: function (data) {
-            ec_left1_Option.xAxis[0].data = data.day
-            ec_left1_Option.series[0].data = data.confirm
-            ec_left1_Option.series[1].data = data.suspect
-            ec_left1_Option.series[2].data = data.heal
-            ec_left1_Option.series[3].data = data.dead
-            ec_left1.setOption(ec_left1_Option)
-            ec_left1.hideLoading()
+            echarts_left1_Option.xAxis[0].data = data.day
+            echarts_left1_Option.series[0].data = data.confirm
+            echarts_left1_Option.series[1].data = data.suspect
+            echarts_left1_Option.series[2].data = data.heal
+            echarts_left1_Option.series[3].data = data.dead
+            echarts_left1.setOption(echarts_left1_Option)
+            echarts_left1.hideLoading()
         },
         error: console.error('请求l1数据失败')
     });
@@ -92,9 +92,9 @@ function get_r1_data() {
     $.ajax({
         url: "/r1",
         success: function (data) {
-            ec_right1_option.xAxis.data = data.city;
-            ec_right1_option.series[0].data = data.confirm;
-            ec_right1.setOption(ec_right1_option);
+            echarts_right1_option.xAxis.data = data.city;
+            echarts_right1_option.series[0].data = data.confirm;
+            echarts_right1.setOption(echarts_right1_option);
         },
         error: console.error('请求r1数据失败')
     })
@@ -104,8 +104,8 @@ function get_r2_data() {
     $.ajax({
         url: "/r2",
         success: function (data) {
-            ec_right2_option.series[0].data = data.kws;
-            ec_right2.setOption(ec_right2_option);
+            echarts_right2_option.series[0].data = data.kws;
+            echarts_right2.setOption(echarts_right2_option);
         }
     })
 }

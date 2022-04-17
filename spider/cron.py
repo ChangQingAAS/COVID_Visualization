@@ -2,7 +2,8 @@ import threading
 from datetime import datetime
 from time import sleep
 from os import popen
-from config import *
+
+PAUSE = 6  # 爬虫程序每多少小时执行一次进行数据更新
 
 
 def cron_task():

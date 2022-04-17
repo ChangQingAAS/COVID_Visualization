@@ -1,4 +1,4 @@
-var ec_center = echarts.init(document.getElementById('c2'), "dark");
+var echarts_center = echarts.init(document.getElementById('c2'), "dark");
 
 var mydata = [{
     'name': '上海',
@@ -8,7 +8,7 @@ var mydata = [{
     'value': 162
 }]
 
-var ec_center_option = {
+var echarts_center_option = {
     title: {
         text: '全国总确诊',
         subtext: '',
@@ -79,4 +79,4 @@ var ec_center_option = {
         data: [] //mydata //数据
     }]
 };
-ec_center.setOption(ec_center_option)
+echarts_center.setOption(echarts_center_option)

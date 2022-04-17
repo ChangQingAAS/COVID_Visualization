@@ -1,5 +1,5 @@
 import pymysql
-from config import *
+from .config import *
 
 
 def get_conn():

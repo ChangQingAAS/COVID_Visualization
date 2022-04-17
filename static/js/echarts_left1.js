@@ -1,6 +1,6 @@
-var ec_left1 = echarts.init(document.getElementById('l1'), 'dark');
+var echarts_left1 = echarts.init(document.getElementById('l1'), 'dark');
 
-var ec_left1_Option = {
+var echarts_left1_Option = {
     // style of title
     title: {
         text: "全国累计趋势",
@@ -90,4 +90,4 @@ var ec_left1_Option = {
     }]
 };
 
-ec_left1.setOption(ec_left1_Option)
+echarts_left1.setOption(echarts_left1_Option)
