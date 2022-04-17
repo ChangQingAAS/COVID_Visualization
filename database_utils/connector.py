@@ -11,7 +11,6 @@ def get_conn():
                            charset=CHARSET)
     # 创建游标
     cursor = conn.cursor()
-    # 执行完毕返回的结果集默认以元组显示
     return conn, cursor
 
 
@@ -22,12 +21,8 @@ def close_conn(conn, cursor):
         conn.close()
 
 
+# 封装通用查询
 def query(sql: str, *args) -> tuple:
-    """封装通用查询
-
-    Args:
-        sql (_type_): _description_
-    """
     conn, cursor = get_conn()
     cursor.execute(sql, args)
     res = cursor.fetchall()

@@ -1,4 +1,4 @@
-DROP TABLE details,hotsearch,history,risk_area,history;
+DROP TABLE details,hotsearch,history,risk_area ;
 
 CREATE TABLE  if not EXISTS  `details` (
     `id` int(11) NOT NULL AUTO_INCREMENT,

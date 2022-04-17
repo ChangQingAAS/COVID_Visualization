@@ -1,8 +1,6 @@
 from flask import Flask, render_template, jsonify
 from jieba.analyse import extract_tags
-from time import strftime
 import string
-import random
 
 from config import *
 import database_utils.get_data as get_data
@@ -38,7 +36,6 @@ def c2_handle():
 def l1_handle():
     data = get_data.get_l1_data()
     day, confirm, suspect, heal, dead = [], [], [], [], []
-    # 很多卫健委网站前7天都是没有数据的，所以把前7天砍掉了
     for da, co, su, he, de in data:
         day.append(da.strftime("%m-%d"))
         confirm.append(co)
@@ -83,7 +80,7 @@ def r1_handle():
 
 @app.route('/r2')
 def r2_handle():
-    # 格式 (('民警抗疫一线奋战16天牺牲1037364',), ('四川再派两批医疗队1537382',)
+    # 格式 (('民警抗疫一线奋战16天牺牲1037364',), ('四川再派两批医疗队1537382',))
     data = get_data.get_r2_data()
     d = []
     for i in data:
@@ -97,5 +94,7 @@ def r2_handle():
 
 
 if __name__ == "__main__":
+    # 网页缓存会阻碍debug => 使用随机端口
+    import random
     app.run(host=HOST,
             port=PORT + int(random.random() * random.random() * 10000))

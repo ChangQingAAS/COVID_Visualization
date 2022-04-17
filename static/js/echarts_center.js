@@ -76,7 +76,8 @@ var echarts_center_option = {
                 fontSize: 8,
             }
         },
-        data: [] //mydata //数据
+        data: [] //mydata 
     }]
 };
+
 echarts_center.setOption(echarts_center_option)

@@ -1,7 +1,6 @@
 var echarts_right2 = echarts.init(document.getElementById('r2'), "dark");
 
-// var ddd = [{'name': '肺炎', 'value': '12734670'}, {'name': '实时', 'value': '12734670'},
-//     {'name': '新型', 'value': '12734670'}]
+// var ddd = [{'name': '肺炎', 'value': '12734670'}, {'name': '实时', 'value': '12734670'} ]
 var echarts_right2_option = {
     // backgroundColor: '#515151',
     title: {
@@ -40,7 +39,7 @@ var echarts_right2_option = {
         // width: 300,
         // height: 200,
         // top: 20,
-        data: []
+        data: [] // ddd
     }]
 }
 

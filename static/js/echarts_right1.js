@@ -1,4 +1,5 @@
 var echarts_right1 = echarts.init(document.getElementById('r1'), 'dark');
+
 var echarts_right1_option = {
 	//标题样式
 	title: {
@@ -30,4 +31,5 @@ var echarts_right1_option = {
 		barMaxWidth: "50%"
 	}]
 };
+
 echarts_right1.setOption(echarts_right1_option)
